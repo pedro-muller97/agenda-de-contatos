@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/agenda.png" alt="Imagem lista de contatos">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form id="form-contato">
+        <input type="text" id="nome-contato" required placeholder = "Nome do contato" />
+        <input type="tel" id="telefone-contato" required placeholder = "Número do contato" maxlength = "11"/>
+        <button type="submit">ADICIONAR</button>
+        </form>
+        <table class="tableclass" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome Completo</th>
+                    <th>Número para Contato</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total de Contatos:</td>
+                        <td> <span class = "numeros" id="total-numeros"></span></td>
+                    </tr>
+                </tfoot>
+            </tbody>
+        </table>    
+    </div>
+    <footer>
+        <div class="rodape">
+            <p>
+                &copy; Agenda de contatos do Pedro Muller - 2024
+            </p>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+
+</body>
+</html>
